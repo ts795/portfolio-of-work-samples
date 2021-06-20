@@ -105,9 +105,9 @@ h3 {
     width: 48%;
 }
 
-/* Make the first application twice as large as the rest of the applications */
+/* Make the first application larger than the rest of the applications */
 .first-item {
-    width: 100%;
+    width: 98%;
 
 }
 
@@ -146,4 +146,50 @@ p, a {
 /* Set the font size for the contact links */
 #contact-links {
     font-size: 125%;
+}
+
+@media screen and (max-width: 1016px) {
+    /* Take up as much space as needed for the project description so it fits*/
+    .project-description {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        background-color: var(--background-color1);
+        width: 100%;
+    }
+}
+
+/* Make the name and nav links stack so they don't overlap*/
+@media screen and (max-width: 792px) {
+    #name-and-nav-links {
+        flex-direction: column;
+    }
+
+    #name-and-nav-links nav {
+        flex-direction: column;
+    }
+
+}
+
+/* Stack content for small screens */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        /* Remove the dividing line for the columns */
+        border-left: none;
+        padding-left: 0%;
+        padding-bottom: 1%;
+    }
+
+    .content-container h2 {
+        float: none;
+        width: auto;
+        text-align: left;
+        padding-right: 0%;
+    }
+
+    /* Make cards that aren't the first item larger so they are easier to see */
+    .card:not(.first-item) {
+        width: 80%;
+    }
 }
