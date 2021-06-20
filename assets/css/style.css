@@ -1,0 +1,36 @@
+/* Flex the name and navigation links at the top of the page */
+#name-and-nav-links {
+    display: flex;
+    /* add 1% maegins on left, right and bottom */
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+/* Show the name on the left */
+#name-and-nav-links h1 {
+    flex: auto;
+}
+
+/* Show the navigation links on the right and evenly distribute the space between the links */
+#name-and-nav-links nav {
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Set the font size for the name and links in the header */
+.header-text {
+    font-size: 200%;
+}
+
+/* styling for the header image */
+header img {
+    /* add 1% vertical margin and 1% horizontal margin */
+    margin: 1% 1%;
+}
+
+/* background color for the header */
+header {
+    background-color: navajowhite;
+}
