@@ -150,8 +150,12 @@ p, a {
 }
 
 /* Make the card brighter when hovering over it */
-.card:hover {
+.card {
     opacity: .5;
+}
+
+.card:hover {
+    opacity: 0.99;
 }
 
 /* Add padding to card text */
