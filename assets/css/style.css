@@ -57,10 +57,11 @@ h2 {
     color: var(--text-color1);
 }
 
-/* Font size for h3 elements */
+/* Font size and padding for h3 elements */
 h3 {
     font-size: 150%;
     color: var(--text-color2);
+    padding: 3px;
 }
 
 /* Styling for content sections */
@@ -146,6 +147,16 @@ p, a {
 /* Set the font size for the contact links */
 #contact-links {
     font-size: 125%;
+}
+
+/* Make the card brighter when hovering over it */
+.card:hover {
+    opacity: .5;
+}
+
+/* Add padding to card text */
+.card p {
+    padding: 3px;
 }
 
 @media screen and (max-width: 1016px) {
